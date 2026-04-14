@@ -9,18 +9,18 @@
       <h1 class="reveal text-h1-sm md:text-h1-md lg:text-h1 font-light text-ink">
         {{ $page->hero_title ?? 'A different kind of firm' }}
       </h1>
+      <p class="reveal reveal-delay-1 text-base md:text-lg font-light text-ink/60 mt-6 max-w-[520px] leading-relaxed">
+        It's hard to fight upstream in a world filled with AI sensationalism and slop. Our purpose is to help businesses digest what is relevant to them and deploy real-world applications that help them grow.
+      </p>
     </div>
   </section>
 
   <!-- MISSION -->
   <section class="content-pad py-12 md:py-20 lg:py-24">
     <div class="max-w-[660px]">
-      <p class="reveal text-h2-sm md:text-h2 font-light text-ink">
-        It's hard to fight upstream in a world filled with AI sensationalism and slop. Our purpose is to help businesses digest what is relevant to them and deploy real-world applications that help them grow.
-      </p>
-      <p class="reveal reveal-delay-1 text-base md:text-lg font-light text-ink/50 mt-8 leading-relaxed">
+      <h2 class="reveal text-display-sm md:text-display-md font-light text-ink">
         We're a boutique team of engineers, strategists, and operators who left larger organizations to build something leaner and more honest. We don't sell what we can't build ourselves.
-      </p>
+      </h2>
     </div>
   </section>
 
@@ -57,7 +57,7 @@
         @foreach($teamMembers as $index => $member)
         <div class="reveal {{ $index > 0 ? 'reveal-delay-' . min($index, 3) : '' }}">
           <div class="relative h-[350px] md:h-[450px] overflow-hidden rounded-lg group">
-            <img src="{{ $member->image ? asset('storage/' . $member->image) : 'https://placehold.co/600x800/2d2d2d/666?text=' . urlencode(substr($member->name, 0, 2)) }}" alt="{{ $member->name }}" class="w-full h-full object-cover object-top">
+            <img src="{{ $member->image ? (str_starts_with($member->image, 'http') ? $member->image : asset('storage/' . $member->image)) : 'https://placehold.co/600x800/2d2d2d/666?text=' . urlencode(substr($member->name, 0, 2)) }}" alt="{{ $member->name }}" class="w-full h-full object-cover object-top">
             <div class="absolute inset-0" style="background: linear-gradient(180deg, transparent 50%, rgba(30,27,46,0.6) 100%);"></div>
             <div class="absolute bottom-4 left-4">
               <p class="font-sans font-medium text-white text-lg">{{ $member->name }}</p>

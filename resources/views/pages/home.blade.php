@@ -73,7 +73,7 @@
           @foreach($teamMembers as $index => $member)
           <div class="reveal {{ $index > 0 ? 'reveal-delay-' . min($index, 3) : '' }}">
             <div class="relative h-[350px] md:h-[450px] overflow-hidden rounded-lg group">
-              <img src="{{ $member->image ? asset('storage/' . $member->image) : 'https://placehold.co/600x800/2d2d2d/666?text=' . urlencode(substr($member->name, 0, 2)) }}" alt="{{ $member->name }}" class="w-full h-full object-cover object-top">
+              <img src="{{ $member->image ? (str_starts_with($member->image, 'http') ? $member->image : asset('storage/' . $member->image)) : 'https://placehold.co/600x800/2d2d2d/666?text=' . urlencode(substr($member->name, 0, 2)) }}" alt="{{ $member->name }}" class="w-full h-full object-cover object-top">
               <div class="absolute inset-0" style="background: linear-gradient(180deg, transparent 50%, rgba(30,27,46,0.6) 100%);"></div>
               <div class="absolute bottom-4 left-4">
                 <p class="font-sans font-medium text-white text-lg">{{ $member->name }}</p>

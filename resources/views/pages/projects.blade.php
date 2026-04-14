@@ -24,7 +24,7 @@
       <div class="project-card reveal {{ $index % 2 ? 'reveal-delay-1' : '' }}" data-type="{{ $project->category }}">
         @if($project->category === 'client')
         <div class="group relative overflow-hidden rounded-lg h-[260px] md:h-[320px] mb-4">
-          <img src="{{ $project->image ? asset('storage/' . $project->image) : 'https://placehold.co/800x400/1a1a2e/4a4a6a?text=' . urlencode($project->title) }}" alt="{{ $project->title }}" class="w-full h-full object-cover">
+          <img src="{{ $project->image ? (str_starts_with($project->image, 'http') ? $project->image : asset('storage/' . $project->image)) : 'https://placehold.co/800x400/1a1a2e/4a4a6a?text=' . urlencode($project->title) }}" alt="{{ $project->title }}" class="w-full h-full object-cover">
           <div class="absolute inset-0 bg-ink/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
             @if($project->case_study_url)
             <a href="{{ $project->case_study_url }}" class="pill-btn text-sm" style="color: #F8F5FF; border-color: #F8F5FF;"><span class="btn-label">View case study</span><span class="btn-arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></span></a>
