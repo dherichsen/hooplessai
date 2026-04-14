@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>@yield('title', 'hoopless.ai')</title>
   <meta name="description" content="@yield('meta_description', 'Boutique AI firm building enterprise-grade software, consulting on intelligent systems, and bringing businesses into the AI era.')">
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <!-- Use Tailwind CDN (same as static site) for pixel-perfect match -->
   <script src="https://cdn.tailwindcss.com"></script>
