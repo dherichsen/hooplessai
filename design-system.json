@@ -1,0 +1,220 @@
+{
+  "extracted_from": "https://orson.ai/",
+  "extracted_at": "2026-04-13T00:00:00Z",
+  "colors": {
+    "primary": {
+      "DEFAULT": "#FFB801",
+      "50": "#FFF8E1",
+      "100": "#FFECB3",
+      "300": "#FFC738",
+      "500": "#FFB801",
+      "600": "#F5A800",
+      "700": "#E09600"
+    },
+    "secondary": {
+      "DEFAULT": "#302F2C"
+    },
+    "neutral": {
+      "50": "#FCF5E4",
+      "100": "#F0EBDD",
+      "200": "#E8E3D5",
+      "300": "#B6B0A0",
+      "400": "#9A9488",
+      "500": "#706B60",
+      "600": "#504D46",
+      "700": "#3E3D39",
+      "800": "#302F2C",
+      "900": "#1A1917"
+    },
+    "background": {
+      "page": "#FCF5E4",
+      "footer": "#F0EBDD",
+      "card": "#FCF5E4"
+    },
+    "semantic": {
+      "success": "#22c55e",
+      "warning": "#FFB801",
+      "error": "#ef4444",
+      "info": "#3b82f6"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "'Big Daily Short', serif",
+      "body": "'Big Daily Short', serif",
+      "label": "'Basel Grotesk', sans-serif",
+      "mono": "'JetBrains Mono', monospace"
+    },
+    "font_notes": {
+      "original_heading": "Big Daily Short (premium, not on Google Fonts)",
+      "google_substitute_heading": "Cormorant Garamond — closest match for the thin, elegant serif with light weight",
+      "original_body_labels": "Basel Grotesk (premium, not on Google Fonts)",
+      "google_substitute_labels": "DM Sans — clean geometric sans-serif substitute"
+    },
+    "scale": {
+      "display": {
+        "size": "86px",
+        "weight": 300,
+        "lineHeight": "1.12",
+        "letterSpacing": "normal",
+        "font": "heading",
+        "description": "Section hero titles: 'Fix what keeps CEOs awake at night', 'Deeply Human', 'AI-Centric'"
+      },
+      "heading-1": {
+        "size": "64px",
+        "weight": 300,
+        "lineHeight": "1.12",
+        "letterSpacing": "normal",
+        "font": "heading",
+        "description": "Hero title: 'Building Trust'"
+      },
+      "heading-2": {
+        "size": "36px",
+        "weight": 300,
+        "lineHeight": "1.25",
+        "letterSpacing": "normal",
+        "font": "heading",
+        "description": "Sub-headlines and intro paragraphs"
+      },
+      "logo": {
+        "size": "42px",
+        "weight": 300,
+        "lineHeight": "1.2",
+        "font": "heading",
+        "description": "Wordmark logo"
+      },
+      "body": {
+        "size": "16px",
+        "weight": 300,
+        "lineHeight": "1.5",
+        "font": "heading",
+        "description": "Body text paragraphs"
+      },
+      "label": {
+        "size": "17px",
+        "weight": 500,
+        "lineHeight": "1.4",
+        "font": "label",
+        "description": "Bold inline labels like 'Trust Builders.', 'Sparring Partners.'"
+      },
+      "label-sm": {
+        "size": "16px",
+        "weight": 500,
+        "lineHeight": "1.4",
+        "font": "label",
+        "description": "Section labels: 'Contact', 'Offices', city names"
+      },
+      "caption": {
+        "size": "14px",
+        "weight": 400,
+        "lineHeight": "1.5",
+        "font": "label",
+        "description": "Small text, footer addresses"
+      }
+    }
+  },
+  "spacing": {
+    "base": 8,
+    "scale": {
+      "xs": 4,
+      "sm": 8,
+      "md": 16,
+      "lg": 24,
+      "xl": 40,
+      "2xl": 80,
+      "3xl": 120,
+      "section": 240
+    },
+    "notes": {
+      "horizontal_padding": "40px on sections",
+      "section_vertical": "Very generous — 240px top/bottom on main sections",
+      "nav_padding": "0px 40px"
+    }
+  },
+  "radii": {
+    "none": "0px",
+    "pill": "40px",
+    "full": "9999px"
+  },
+  "shadows": {
+    "note": "Flat design — no visible shadows used on the reference site"
+  },
+  "layout": {
+    "containerMaxWidth": "none",
+    "containerPadding": "40px",
+    "navHeight": "80px",
+    "navBorder": "1px solid rgba(182, 176, 160, 0.3)",
+    "gridColumns": 12,
+    "breakpoints": {
+      "sm": "640px",
+      "md": "768px",
+      "lg": "1024px",
+      "xl": "1280px",
+      "2xl": "1536px"
+    }
+  },
+  "components": {
+    "cta_button": {
+      "border": "1px solid #302F2C",
+      "borderRadius": "40px",
+      "padding": "8px 14px 8px 9px",
+      "fontSize": "16px",
+      "dot": {
+        "color": "#FFB801",
+        "size": "20px",
+        "borderRadius": "50%"
+      }
+    },
+    "language_switcher": {
+      "border": "1px solid #302F2C",
+      "borderRadius": "40px",
+      "padding": "8px 14px 8px 9px",
+      "activeDot": "#FFB801",
+      "inactiveDot": "#B6B0A0"
+    },
+    "hero_gradient": {
+      "type": "radial",
+      "css": "radial-gradient(41.33% 41.33% at 50% 50%, #FFC738 0%, rgba(248, 233, 226, 0) 100%)"
+    },
+    "hamburger_menu": {
+      "lines": 3,
+      "color": "#302F2C"
+    }
+  },
+  "tailwind_config": {
+    "extend": {
+      "colors": {
+        "primary": {
+          "50": "#FFF8E1",
+          "100": "#FFECB3",
+          "300": "#FFC738",
+          "500": "#FFB801",
+          "600": "#F5A800",
+          "700": "#E09600",
+          "DEFAULT": "#FFB801"
+        },
+        "cream": {
+          "DEFAULT": "#FCF5E4",
+          "dark": "#F0EBDD"
+        },
+        "ink": "#302F2C"
+      },
+      "fontFamily": {
+        "serif": ["'Big Daily Short'", "serif"],
+        "sans": ["'Basel Grotesk'", "sans-serif"]
+      },
+      "borderRadius": {
+        "pill": "40px"
+      },
+      "fontSize": {
+        "display": ["86px", { "lineHeight": "1.12", "fontWeight": "300" }],
+        "h1": ["64px", { "lineHeight": "1.12", "fontWeight": "300" }],
+        "h2": ["36px", { "lineHeight": "1.25", "fontWeight": "300" }],
+        "logo": ["42px", { "lineHeight": "1.2", "fontWeight": "300" }]
+      },
+      "spacing": {
+        "section": "240px"
+      }
+    }
+  }
+}
